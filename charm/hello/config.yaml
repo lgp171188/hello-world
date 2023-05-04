@@ -1,0 +1,13 @@
+options:
+  app-repo-url:
+    type: string
+    default: "https://git.launchpad.net/~lgp171188/hello-world"
+    description: "The git URL to clone the application from."
+  app-dir:
+    type: string
+    default: "/var/www/hello"
+    description: "The directory to deploy the application to."
+  app-venv-dir:
+    type: string
+    default: "/var/www/.env"
+    description: "The directory to create the application's virtualenv environment in."

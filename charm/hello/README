@@ -1,0 +1,23 @@
+# Overview
+
+This charm deploys the [hello world application](https://code.launchpad.net/~lgp171188/hello-world/+git/hello-world) on Ubuntu 22.04.
+
+# Build
+
+This charm can be built using `charmcraft` by running the following command.
+
+    charmcraft pack
+
+# Usage
+
+This charm can be deployed using the following command.
+
+    juju deploy ./<path to the built charm>
+
+Since the `hello` app requires a postgresql database, deploy an instance
+
+    juju deploy postgresql --channel 14/stable
+
+and relate it to the `hello` app charm by running
+
+    juju relate hello:db postgresql:db

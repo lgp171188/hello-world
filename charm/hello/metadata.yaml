@@ -1,0 +1,17 @@
+name: hello
+display-name: |
+  hello
+summary: A hello world application
+maintainer: L. Guruprasad <guruprasad.ln@canonical.com>
+description: |
+  A hello world application built using django.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+series:
+  - jammy
+subordinate: false
+requires:
+  db:
+    interface: pgsql
