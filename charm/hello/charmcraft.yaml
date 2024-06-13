@@ -1,6 +1,4 @@
-base:
-  name: ubuntu
-  channel: 24.04
+base: ubuntu@24.04
 
 platforms:
   ubuntu-amd64:
